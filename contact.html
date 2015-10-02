@@ -31,21 +31,56 @@
                    CompanyCity, CompanyProvince <br>
                    TEL: (705) 555-5555<br>
                    FAX: (705) 555-5556<br>
-                   EMAIL:  
-                   <a href="mailto:info@companyname.com">info@companyname.com</a><br>
                    WWW: <a href="http://www.companyname.com" target="_blank">www.companyname.com</a><br><br>
                </address>
             </article>
             
+            <hr>
+            
             <!-- Form Section -->
             <section class="formSection">
-                
+                <form action="processform.php" method="post" id="contactForm" class="forms">
+                   <fieldset class="contact">
+                    <legend>Contact Form</legend>
+                    
+                    <div class="row formGroup">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" class="formControl" placeholder="Enter Your First Name" required autofocus>
+                    </div>
+                    
+                     <div class="row formGroup">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" class="formControl" placeholder="Enter Your Last Name" required>
+                    </div>
+                    
+                     <div class="row formGroup">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="formControl" placeholder="Enter your email@companyname.com" required>
+                    </div>
+                    
+                    <div class="row formGroup">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" class="formControl" placeholder="(XXX) XXX-XXXX" required>
+                    </div>
+                    
+                    <div class="row formGroup">
+                    <label for="message">Your Message</label>
+                    <input type="textarea" id="message" name="message" class="formControl" placeholder="Enter Your message here..." required>
+                    </div>
+                    
+                    <div class="row formGroup">
+                        <input type="submit" id="submitButton" name="submitButton" value="Send" class="button">
+                        
+                    </div>
+                </fieldset>
+                </form>
             </section>
             
            </main>
            
            <!-- Footer Section -->
            <footer role="contentinfo">
+              <hr>
                &copy; Copyright 2015. All rights reserved.
            </footer>
            
